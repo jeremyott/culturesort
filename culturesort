@@ -1,0 +1,48 @@
+Create a swipeable personality test that uses the Traitify API to identify
+you personality traits.
+I will be using the swing library to create the swipe functionality.
+Once Traitify has successfully identified your personality trait
+store that information and request jobs from Indeed that correspond with
+the stored personality. Return jobs in batches 3.
+
+//APIs
+Indeed: http://www.indeed.com/jsp/apiinfo.jsp
+Traitify: https://app.traitify.com/developer
+
+//Libraries
+https://github.com/alkawryk/tinderjs
+https://github.com/gajus/swing
+https://jqueryui.com/
+
+//DB
+https://firebase.google.com/
+
+If time allows for it, provide filter options for city, salary, etc.
+
+
+Profile - Bit Arithmetic to complete faster matching.
+Alumni Bridge -
+
+Personality Test
+
+Interact with traitify API
+ - Make a couple calls to review
+
+ //Create a person object
+ //Ask for First and Last name
+ //
+
+//Function animateLogo triggered on document load.
+//Event listener to check for event completion of animateLogo. Replace with form.
+//Function createPerson creates object "person" with following attributes: name, years in workforce, age, and industry.
+//Function newPerson, adds all attribute values to new object using template
+//Convert to JSON
+//Function logPerson makes AJax call to firebase, passing json over and creating new Db table / table row
+//Function cardSort replaces form on submit with card questions.
+//Function dislikeScore adds one point to dislike score
+//Function likeScore adds one point to like score
+//Function totalsScore calculates score
+//Function personType loops through score options and returns personality type
+//Function showPersonality displays personality type on screen and twitter button
+//Function tweetScore initializes call to twitter.
+//Stored personType is passed on to twitter for sharing

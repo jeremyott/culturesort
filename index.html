@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CultureSort</title>
+    <link rel="stylesheet" type="text/css" href="jtinder-master/css/jTinder.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script type="text/javascript" src="js/main.js"></script>
+
+
+</head>
+<body>
+    <!--Logo Bar-->
+      <div style="width: 100%;" id="nav" class="container-fluid hide">
+        <div class="row">
+          <div style="text-align: center;" class="col-xs-12">
+            <img style="max-height: 55px; padding-top: 10px;" src="img/culture-sort-logo.svg" alt="">
+          </div>
+        </div>
+      </div>
+    <!--End Logo Bar-->
+    <!--Onboarding Start-->
+    <div style="" class="container-fluid" id="logo">
+      <div class="row">
+        <div style="width: 45%;"class="col-xs-6" id="cube">
+          <img style="max-height: 70px; float: right;" src="img/cube.png" alt="">
+        </div>
+        <div style="width:45%;" class="col-xs-6" id="text">
+          <img style="max-width: 150px; width: 100%;" src="img/logo_text.png" alt="">
+        </div>
+      </div>
+      <div style="padding-top: 50px;" class="row">
+        <div style="text-align: center;" class="col-xs-12">
+          <a onclick="showForm()" class="ghost-button" href="#" id="getStarted">Get Started</a>
+        </div>
+      </div>
+    </div>
+    <!--Onboarding End-->
+
+    <!-- start padding container -->
+    <div id="cards" class="wrap">
+        <!-- start jtinder container -->
+        <div id="tinderslide">
+            <ul>
+                <li class="pane1">
+                    <div class="img"></div>
+                    <div>Miami Beach</div>
+                    <div class="like"></div>
+                    <div class="dislike"></div>
+                </li>
+                <li class="pane2">
+                    <div class="img"></div>
+                    <div>San Francisco</div>
+                    <div class="like"></div>
+                    <div class="dislike"></div>
+                </li>
+                <li class="pane3">
+                    <div class="img"></div>
+                    <div>Chicago</div>
+                    <div class="like"></div>
+                    <div class="dislike"></div>
+                </li>
+                <li class="pane4">
+                    <div class="img"></div>
+                    <div>New York</div>
+                    <div class="like"></div>
+                    <div class="dislike"></div>
+                </li>
+                <li class="pane5">
+                    <div class="img"></div>
+                    <div>Beach</div>
+                    <div class="like"></div>
+                    <div class="dislike"></div>
+                </li>
+            </ul>
+        </div>
+        <!-- end jtinder container -->
+    </div>
+    <!-- end padding container -->
+
+    <!-- jTinder trigger by buttons  -->
+    <div class="actions">
+        <a href="#" class="dislike"><i></i></a>
+        <a href="#" class="like"><i></i></a>
+    </div>
+
+    <!-- jTinder status text  -->
+    <div id="status"></div>
+
+    <!--Firebase Script-->
+    <script>
+    // Initialize Firebase
+    var config = {
+       apiKey: "AIzaSyDXt-FjtHrXOMIUPs0vHcJvqODFtQc1Z7E",
+       authDomain: "culturesort.firebaseapp.com",
+       databaseURL: "https://culturesort.firebaseio.com",
+       storageBucket: "culturesort.appspot.com",
+       messagingSenderId: "676540505660"
+     };
+     firebase.initializeApp(config);
+
+     var messageAppReference = firebase.database();
+
+     $('#message-form').submit(function(event) {
+       // by default a form submit reloads the DOM which will subsequently reload all our JS
+       // to avoid this we preventDefault()
+       event.preventDefault()
+
+       // grab user message input
+       var message = $('#message').val()
+
+       // clear message input (for UX purposes)
+       $('#message').val('')
+
+       // create a section for messages data in your db
+       var messagesReference = messageAppReference.ref('messages');
+
+       // use the set method to save data to the messages
+       messagesReference.push({
+         message: message,
+         votes: 0
+       })
+     })
+
+    </script>
+    <!--End Firebase Script-->
+
+    <!-- jQuery lib -->
+    <script type="text/javascript" src="jtinder-master/js/jquery.min.js"></script>
+    <!-- transform2d lib -->
+    <script type="text/javascript" src="jtinder-master/js/jquery.transform2d.js"></script>
+    <!-- jTinder lib -->
+    <script type="text/javascript" src="jtinder-master/js/jquery.jTinder.js"></script>
+    <!-- jTinder initialization script -->
+    <script type="text/javascript" src="jtinder-master/js/main.js"></script>
+
+</body>
+</html>

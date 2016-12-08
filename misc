@@ -1,0 +1,118 @@
+<div id="form" class="form container-fluid hide">
+  <div class="row">
+  <div class="col-xs-12">
+  <form id="formQuestion" name="personForm"  class="form-horizontal">
+    <fieldset>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="textinput">What is your name?</label>
+      <div id="personName" class="col-md-4">
+      <input name="personName" type="text" placeholder="Ned Stark" class="form-control input-md">
+      </div>
+    </div>
+
+    <!-- Select Basic -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="selectbasic">How many years have you been in the workforce?</label>
+      <div id="" class="col-md-4">
+        <select id="personWork" name="personWork" placeholder="# of years in worforce" name="selectbasic" class="form-control">
+          <option value="1">0-2 Years</option>
+          <option value="2">2-4 Years</option>
+          <option value="3">4-8 Years</option>
+          <option value="4">8-10 Years</option>
+          <option value="5">10+ Years</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Button -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="singlebutton"></label>
+      <div class="col-md-4">
+        <input onclick="success()" class="ghost-button" style="width: 100%;" type="submit" id="singlebutton" name="singlebutton" class="ghost-button" value="Submit"></input>
+      </div>
+    </div>
+
+    </fieldset>
+    </form>
+  </div>
+  </div>
+</div>
+<!--Form Ends Here-->
+
+
+
+old index 2
+<<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" type="text/css" href="jtinder-master/css/jTinder.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="" href="js/main.js">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- jQuery lib -->
+        <script type="text/javascript" src="jtinder-master/js/jquery.min.js"></script>
+
+        <!-- transform2d lib -->
+        <script type="text/javascript" src="jtinder-master/js/jquery.transform2d.js"></script>
+
+        <!-- jTinder lib -->
+        <script type="text/javascript" src="jtinder-master/js/jquery.jTinder.js"></script>
+
+        <!-- jTinder initialization script -->
+        <script>$("#tinderslide").jTinder();</script>
+    </head>
+
+    <body>
+    <header>
+      <div class="nav container-fluid">
+        <div class="row">
+          <div class="col-sm-6">
+            <span id="menu" class="glyphicon glyphicon-th"></span>
+          </div>
+          <div id="user" class="col-sm-6">
+            <img src="">
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container-fluid">
+        <div class="row">
+          <div id="tinderslide">
+              <ul>
+                  <li class="pane1"><div class="img"></div><div>Miami Beach</div><div class="like"></div><div class="dislike"></div></li>
+                  <li class="pane2"><div class="img"></div><div>San Francisco</div><div class="like"></div><div class="dislike"></div></li>
+                  <li class="pane3"><div class="img"></div><div>Chicago</div><div class="like"></div><div class="dislike"></div></li>
+                  <li class="pane4"><div class="img"></div><div>New York</div><div class="like"></div><div class="dislike"></div></li>
+                  <li class="pane5"><div class="img"></div><div>Beach</div><div class="like"></div><div class="dislike"></div></li>
+              </ul>
+          </div>
+          </div>
+        </div>
+      </div>
+    </main>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+
+
+    </body>
+
+<script src="https://www.gstatic.com/firebasejs/3.6.3/firebase.js"></script>
+
+</html>--
