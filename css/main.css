@@ -311,7 +311,7 @@ textarea {
   display: none;
 }
 .active {
-  display: inline;
+  display: block;;
 }
 .ghost-button {
   background: none;
@@ -386,9 +386,7 @@ input:focus {
   width: 350px;
   margin: 0 auto;
 text-align: center;
-  padding-top: 150px;
 }
-
 form, input {
   width: 100% !important;
 }

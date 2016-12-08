@@ -11,10 +11,11 @@
     <script type="text/javascript" src="js/main.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.0.0/firebase.js"></script>
     <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
     <!--Logo Bar-->
-      <div style="width: 100%;" id="nav" class="container-fluid">
+      <div style="width: 100%;" id="nav" class="container-fluid hide">
         <div class="row">
           <div style="text-align: center;" class="col-xs-12">
             <img style="max-height: 55px; padding-top: 10px;" src="img/culture-sort-logo.svg" alt="">
@@ -40,7 +41,7 @@
     </div>
     <!--Onboarding End-->
     <!-- Form Starts Here -->
-    <div id="formWrapper" class="form-wrapper">
+    <div id="formWrapper" class="form-wrapper hide">
     <form id="message-form" class="" action="index.html" method="post">
     <input id="message" type="text" placeholder="Please Enter Your Full Name" name="message" value="">
     <input onclick="success()" id="submit" type="submit" name="" value="Submit">
@@ -49,7 +50,7 @@
     <!--Form Ends Here-->
 
     <!-- start padding container -->
-    <div id="cards" class="wrap">
+    <div id="cards" class="wrap hide">
         <!-- start jtinder container -->
         <div id="tinderslide">
             <ul>
@@ -90,13 +91,13 @@
     <!-- end padding container -->
 
     <!-- jTinder trigger by buttons  -->
-    <div class="actions">
+    <div id="actions" class="actions hide">
         <a href="#" class="dislike"><i></i></a>
         <a href="#" class="like"><i></i></a>
     </div>
 
     <!-- jTinder status text  -->
-    <div id="status"></div>
+    <div class="status hide" id="status"></div>
 
     <!--Firebase Script-->
     <script>

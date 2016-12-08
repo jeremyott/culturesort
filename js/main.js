@@ -53,16 +53,15 @@
 //Event listener to check for event completion of animateLogo. Replace with form.
 function showForm(){
   document.getElementById("logo").className = "hide";
-  document.getElementById("message-form").className = "active";
+  document.getElementById("formWrapper").className = "form-wrapper active";
   document.getElementById("nav").className = "container-fluid active";
 }
 //form submit
 function success(e){
-  document.getElementById("message-form").className = "hide";
-document.getElementById("cards").className = "wrap active";
-document.getElementById("jtinderActions").className = "actions active";
-document.getElementById("status").className = "active";
 document.getElementById("message-form").className = "hide";
+document.getElementById("cards").className = "wrap active";
+document.getElementById("actions").className = "actions active";
+document.getElementById("status").className = "active";
 $('#formQuestion').submit(false);
 console.log("success!!")
 
