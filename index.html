@@ -54,31 +54,31 @@
         <!-- start jtinder container -->
         <div id="tinderslide">
             <ul>
-                <li class="pane1">
+                <li id="pane" class="pane1">
                     <div class="img"></div>
                     <div>Miami Beach</div>
                     <div class="like"></div>
                     <div class="dislike"></div>
                 </li>
-                <li class="pane2">
+                <li id="pane" class="pane2">
                     <div class="img"></div>
                     <div>San Francisco</div>
                     <div class="like"></div>
                     <div class="dislike"></div>
                 </li>
-                <li class="pane3">
+                <li id="pane" class="pane3">
                     <div class="img"></div>
                     <div>Chicago</div>
                     <div class="like"></div>
                     <div class="dislike"></div>
                 </li>
-                <li class="pane4">
+                <li id="pane" class="pane4">
                     <div class="img"></div>
                     <div>New York</div>
                     <div class="like"></div>
                     <div class="dislike"></div>
                 </li>
-                <li class="pane5">
+                <li id="pane" class="pane5">
                     <div class="img"></div>
                     <div>Beach</div>
                     <div class="like"></div>
@@ -92,13 +92,15 @@
 
     <!-- jTinder trigger by buttons  -->
     <div id="actions" class="actions hide">
-        <a href="#" class="dislike"><i></i></a>
-        <a href="#" class="like"><i></i></a>
+        <a onclick="checkScore()" href="#" class="dislike"><i></i></a>
+        <a onclick="checkScore()" href="#" class="like"><i></i></a>
     </div>
 
     <!-- jTinder status text  -->
     <div class="status hide" id="status"></div>
 
+<div>
+</div>
     <!--Firebase Script-->
     <script>
     // Initialize Firebase
@@ -145,6 +147,19 @@
     <script type="text/javascript" src="jtinder-master/js/jquery.jTinder.js"></script>
     <!-- jTinder initialization script -->
     <script type="text/javascript" src="jtinder-master/js/main.js"></script>
+    <script>
+    function checkScore(){
+    if (dislikeScore === 3){
+    console.log("You're probably a worker")
+    }
+    else if (likeScore === 3){
+      console.log("nada")
+    }
+    else {
+      console.log("Do nothing");
+    }
+    }
+    </script>
 
 </body>
 </html>

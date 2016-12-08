@@ -50,7 +50,7 @@
 
 //Function animateLogo triggered on document load.
 
-//Event listener to check for event completion of animateLogo. Replace with form.
+//Function replace form to check for event completion of animateLogo. Replace with form.
 function showForm(){
   document.getElementById("logo").className = "hide";
   document.getElementById("formWrapper").className = "form-wrapper active";
@@ -64,7 +64,6 @@ document.getElementById("actions").className = "actions active";
 document.getElementById("status").className = "active";
 $('#formQuestion').submit(false);
 console.log("success!!")
-
 }
 
 //Function person creates object "person" with following attributes: name, years in workforce, age, and industry.
@@ -82,11 +81,28 @@ var person1 = new person(10,10)
 //Function dislikeScore adds one point to dislike score
 //Function likeScore adds one point to like score
 //Function totalsScore calculates score
+var dislikeScore=0;
+var likeScore=0;
+function checkScore(){
+if (dislikeScore === 3){
+console.log("You're probably a worker")
+}
+else if (likeScore === 3){
+  console.log("nada")
+}
+else {
+  console.log("Do nothing");
+}
+}
+
 function scoreTotal(){
 var scoreTotal = 10 + likeScore - dislikeScore;
 console.log(scoreTotal);
 }
 //Function personType loops through score options and returns personality type
+
+
+
 //Function showPersonality displays personality type on screen and twitter button
 //Function tweetScore initializes call to twitter.
 //Stored personType is passed on to twitter for sharing

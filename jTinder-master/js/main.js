@@ -35,6 +35,12 @@ $('.actions .like, .actions .dislike').click(function(e){
 	$("#tinderslide").jTinder($(this).attr('class'));
 });
 
+if (dislikeScore >= 3){
+console.log("You're probably a worker")
+}
+else{
+  console.log("nada")
+}
 
 
 
