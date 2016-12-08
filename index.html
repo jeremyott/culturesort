@@ -7,13 +7,14 @@
     <link rel="stylesheet" type="text/css" href="jtinder-master/css/jTinder.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">
     <script type="text/javascript" src="js/main.js"></script>
-
-
+    <script src="https://www.gstatic.com/firebasejs/3.0.0/firebase.js"></script>
+    <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
 </head>
 <body>
     <!--Logo Bar-->
-      <div style="width: 100%;" id="nav" class="container-fluid hide">
+      <div style="width: 100%;" id="nav" class="container-fluid">
         <div class="row">
           <div style="text-align: center;" class="col-xs-12">
             <img style="max-height: 55px; padding-top: 10px;" src="img/culture-sort-logo.svg" alt="">
@@ -38,6 +39,14 @@
       </div>
     </div>
     <!--Onboarding End-->
+    <!-- Form Starts Here -->
+    <div id="formWrapper" class="form-wrapper">
+    <form id="message-form" class="" action="index.html" method="post">
+    <input id="message" type="text" placeholder="Please Enter Your Full Name" name="message" value="">
+    <input onclick="success()" id="submit" type="submit" name="" value="Submit">
+    </form>
+    </div>
+    <!--Form Ends Here-->
 
     <!-- start padding container -->
     <div id="cards" class="wrap">

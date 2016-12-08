@@ -59,7 +59,7 @@ function showForm(){
 //form submit
 function success(e){
   document.getElementById("message-form").className = "hide";
-document.getElementById("cards").className = "active";
+document.getElementById("cards").className = "wrap active";
 document.getElementById("jtinderActions").className = "actions active";
 document.getElementById("status").className = "active";
 document.getElementById("message-form").className = "hide";

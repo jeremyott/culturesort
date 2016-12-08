@@ -311,7 +311,7 @@ textarea {
   display: none;
 }
 .active {
-  display: inline-block;
+  display: inline;
 }
 .ghost-button {
   background: none;
